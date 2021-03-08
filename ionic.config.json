@@ -1,0 +1,7 @@
+{
+  "name": "inoic_angular_test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
