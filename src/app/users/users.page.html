@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-row>
+      <ion-col>
+        <ion-title>users</ion-title>
+
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="logout()">Logout</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list padding *ngFor="let item of usersList">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>{{item.firstName}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
